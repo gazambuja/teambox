@@ -736,7 +736,9 @@ en:
     new:
       assigned_to_nobody: 'Unassigned'
       assigned_to: "Assigned to:"
+      preview: "Preview"
       submit: Save
+      close: "Close"
       project: "What are you doing? Share ideas, links, updates."
       conversation: "Send a message to the rest of the group."
       task_list: "Share ideas for this task list. To create and assign tasks, use the sidebar."
@@ -813,6 +815,7 @@ en:
       welcome: Welcome
       all_projects: 'All Projects'
       new_project: +
+      signed_in: Signed in as
     project_settings_navigation:
       general: General Settings
       picture: Project Picture
@@ -860,6 +863,7 @@ en:
       all_tasks: "All Tasks"
       unarchived_tasks: "Unarchived Tasks"
       my_tasks:
+        title: "My tasks"
         one: "My 1 Task"
         other: "My {{count}} Tasks"
       everybodys_tasks: "Everybody's Tasks"

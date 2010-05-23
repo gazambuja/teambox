@@ -12,10 +12,10 @@ pt:
     cancel: Cancelar
     close: Fechar
     save: Salvar
-    show_more: "Ver {{number}} mais"
+    show_more: Ver {{number}} mais
     print: Imprimir esta página
     prev: Anterior
-    next: Próximo
+    next: Seguinte
     tasks:
       one: 1 tarefa
       other: "{{count}} tarefas"
@@ -99,9 +99,9 @@ pt:
       save: Salvar as mudanças
   reset_passwords:
     new:
-      title: "Então, você perdeu a senha?"
+      title: Então, você perdeu a senha?
       email: Qual foi o e-mail utilizado?
-      back: Voltar na página de login
+      back: Voltar para a página de login
       submit: Envie-me um link para redefinir minha senha
     create:
       not_found: "Não foi encontrado nenhum usuário com este email: {{email}}<br/>Verifique se foi escrito corretamente e tente novamente. Se ainda não funcionou envie-nos um email: {{support}}"
@@ -112,8 +112,8 @@ pt:
       title: Redefinir senha
       login_link_sent: "Foi enviado um email para {{email}} assim você ira conseguir mudar sua senha."
       follow_the_link: "Segue o link no email para entrar no Teambox! Se não achar o correio, verifica na pasta SPAM. "
-      not_found: "O email <b>{{email}}</b> não pertence a ninguém no Teambox. Pode que você tenha escrito incorretamente."
-      change_password_now: "Bem-vindo novamente! É o momento de <b>escolher uma nova senha</b> para não esquecer."
+      not_found: "O email <b>{{email}}</b> não pertence a ninguém no Teambox. Pode ser que você tenha escrito incorretamente."
+      change_password_now: "Bem-vindo novamente! É o momento de <b>escolher uma nova senha</b>."
   cards:
     card:
       phone_numbers: Telefone
@@ -140,19 +140,19 @@ pt:
       language: Lingua
       email: Email
       password: Senha
-      password_confirmation: Confirmar contraseña
+      password_confirmation: Confirmar senha
       sunday: Domingo
       monday: Segunda-feira
-      first_day_of_week: Semana empieza en
-      change_password: Cambiar contraseña
-      confirm_password: Confirmar contraseña
-      use_this_email: "Has sido invitado a Teambox con esta dirección de correo. Si quieres acceder a los proyectos de quien te invitó, no cambies la dirección de correo. Podrás cambiar tu email una vez estés dado de alta."
-      notify_mentions: "Notificarme cuando me mencionen en un comentario, por ejemplo: Hola @{{login}}!"
-      notify_conversations: Notificarme de conversaciones que sigo
-      notify_task_lists: Notificarme de comentarios en listas de tareas que sigo
-      notify_tasks: Notificarme de comentarios en tareas que sigo
-      wants_task_reminder: Recibir un email diario con mis tareas
-      invalid_login: "usa sólo letras, números y _"
+      first_day_of_week: Primeiro dia da semana
+      change_password: Mudar senha
+      confirm_password: Confirmar senha
+      use_this_email: "Você foi convidado para trabalhar ou compartilhar projetos utilizando este endereço de correio. Se você quiser acessar esses projetos, não altere o endereço de email. Você pode alterar o seu endereço de e-mail assim que tiver concluído o processo de inscrição."
+      notify_mentions: "Notifique-me quando meu usuário e senha é mencionado (por exemplo: @{{login}}). Você receberá um e-mail!"
+      notify_conversations: Notifique-me das conversas que sigo
+      notify_task_lists: Notifique-me de comentários em listas de tarefas que sigo
+      notify_tasks: Notifique-me de comentários em tarefas que sigo
+      wants_task_reminder: Receber um email diariamente com minhas tarefas
+      invalid_login: "utiliza apenas letras, números e _"
       avatar:
         field: Novo avatar
         presence: "Você não pode subir um arquivo vazio"
@@ -161,11 +161,19 @@ pt:
         gravatar_in_use: "Não temos nenhuma foto sua, então iremos utilizar {{gravatar}}:"
         upload_here_or_at_gravatar: "Você pode subir uma foto aqui, ou configurar uma em {{gravatar}}."
         destroy: Eliminar avatar
+      account_deletion:
+        steps_before_1: "To delete your Teambox account, first you need to leave or delete all your current projects."
+        steps_before_2: "This will ensure that no other users will lose data on their projects when you delete your account."
+        steps_before_3: "Leave or delete your current projects and then come back to this page to delete your account."
+        what_will_happen: "Após eliminar sua conta você não ira conseguir acessar novamente no Teambox."
+        delete_my_account: "Eliminar minha conta agora"
+        account_deleted: "Sua conta foi eliminada. Vamos sentir saudades de você!"
+        couldnt_delete_account: "Não conseguimos eliminar sua conta. Você ainda tem projetos ativos ou arquivados."
       tooltips:
         login: "Você necessita de um nome de usuário para acessar. As pessõas irão conseguir achar você pelo nome de usuário. Tem que ser em minúsculas, sem espaços. Você pode utlizar traço baixo (_)."
         first_name: Mais de 20 caracteres.
         last_name: Mais de 20 caracteres.
-        email: "Ingrese seu email real, assim os outros usuários podem entrar em contato com você."
+        email: Ingrese seu email real, assim os outros usuários podem entrar em contato com você.
         password: "Combinando letras, números, letras maiúsculas e minúsculas é uma boa idéia."
         phone: "O número de telefóne do trabalho estará visível para os companheiros. Inseri-lo na íntegra, ex. +55 11 12345678"
     new:
@@ -173,17 +181,18 @@ pt:
       submit: Criar conta
       no_public_signup: Não está permitido criar contas sem um convite
       you_are_logged_in: "Você já tem uma conta de Teambox. Se quiser ingressar com outro usuário, feche a sessão e tenta novamente."
-      existing_user: "Se já tem uma conta, <a href='{{login_url}}'>ingressa</a> ou <a href='{{forgot_url}}'>redefine tua senha</a>."
+      existing_user: "Se já tem uma conta, <a href='{{login_url}}'>ingressa</a> ou <a href='{{forgot_url}}'>redefina a senha</a>."
       you_already_have_an_account: "Já tem uma conta no Teambox em {{email}}. <a href='{{login_link}}'>Acessa na tua conta</a> ou <a href='{{reset_password_link}}'>redefine tua senha</a> se você esqueceu."
     create:
-      thanks: ¡Obrigado por se registrar!
-      error: "Não conseguimos registrar sua conta, Tenta novamente."
+      thanks: Obrigado por se registrar!
+      error: "Não conseguimos registrar sua conta, Tente novamente."
     edit:
       title_settings: Preferências
       title_profile: Informação do perfil
       title_picture: Imagem do perfil
       title_notifications: Notificações
       title_deletion: Eliminar ou arquivar o projeto
+      title_delete: Eliminar usuário
       submit: Atualizar
     update:
       updated: Perfil atualizado
@@ -198,13 +207,13 @@ pt:
       profile: Perfil
       projects: Projetos
       recent_activity_for: "Atividade recente de {{user_name}}"
-      pending_invite: "{{name}} currently has a pending invitation to one of your projects. You will not be able to access any more information until this invitation has been accepted."
+      pending_invite: "{{name}} possui um convite pendente para um dos seus projetos. Você não poderá acessar nenhuma informação até que este convite seja aceito."
     user:
       formatted_address: "{{street}}, {{city}} ({{country}})"
       remove_from_project: Eliminar do projeto
     welcome:
-      get_started: Já estas no Teambox!
-      intro1: "Você é nosso mais novo membro! Você verá em breve como Teambox pode tornar-se ponto de partida do seu dia."
+      get_started: Já esta no Teambox!
+      intro1: "Você é nosso mais novo membro! Você verá em breve como Teambox pode tornar-se o ponto de partida do seu dia."
       intro2: "Onde você pode ir agora? Criar um projeto para <b>colaborar</b>: "# ou uma agenda para acompanhar os <b>contatos</b>:"
       projects:
         title: Projetos
@@ -217,15 +226,15 @@ pt:
         twitter: 'Twitter,'
         facebook: Facebook
         in_your_site: na tua página ou blog!
-        tell_us: "¿Você utiliza o Teambox todos os dias? Nos fala <a href='mailto:{{address}}'>como você o utiliza</a> em um email!"
-      stop_welcome: Ocultar a página de bem-vinda
+        tell_us: "Você utiliza o Teambox todos os dias? Nos escreva <a href='mailto:{{address}}'>como você o utiliza</a> em um email!"
+      stop_welcome: Ocultar a página de boas vindas
     unconfirmed_email:
-      title: Confirma teu endereço de email
-      invitation_sent_to: "Temos enviado um convite para <i>{{email}}</i>, verifica teu endereço de correio."
+      title: Confirme o seu endereço de email
+      invitation_sent_to: "Enviamos um convite para <i>{{email}}</i>, verifique o seu endereço de correio."
       follow_the_link: <b>Abre este email e segue o link que tem dentro</b> para ativar tua conta.
       problems_title: Problemas?
-      resend: "¿Não encuentras o email de confirmação? Faz clique <a href='{{link}}'>aquí</a> para reenviar o correio."
-      spam: "Tenha certeça que o email não foi classificado como correio indesejado ou spam."
+      resend: "Não encontrou o seu email de confirmação? Clique <a href='{{link}}'>aquí</a> para reenviar o correio."
+      spam: "Tenha certeza que o email não foi classificado como correio indesejado ou spam."
       wrong_address: "Endereço errado? Se foi escrito o endereço de forma incorreta, <a href='{{link}}'>cancela o processo</a> e volta a criar tua conta."
       problems: "Se ainda tem problemas, nos envie um email! {{support}}"
     daily_task_reminder_email:
@@ -300,11 +309,11 @@ pt:
         description: Atividade em todos teus projetos
       archived: "Mostrar {{count}} projetos arquivados..."
     primer:
-      empty: Ainda você não pertenece a nenhum projeto
-      create_first: Cria teu primer projeto!
-      define1: "<b>Colabora</b> con tu grupo para tus proyectos: un sitio web, organizar una fiesta, trabajos para clientes..."
-      define2: "Puedes crear <b>tantos proyectos como quieras</b> y acceder a ellos online."
-      item1: "<b>Crea un proyecto</b>, dale un nombre e <b>invita a tus contactos</b> a él."
+      empty: Você ainda não está em nenhum projeto
+      create_first: Crie o seu primeiro projeto!
+      define1: "<b>Colabore</b> com um grupo para seus projetos: criar um website, organizar uma festa, trabalhos para clientes..."
+      define2: "Você pode criar <b>quantos projetos quiser</b> e acessá-los online."
+      item1: "<b>Crie um projeto</b>, escolha um nome e <b>convide os seus contatos</b> para ele."
       item2: "<b>Comenta</b> sobre lo que haces en cada momento en el muro del proyecto."
       item3: "<b>Conversa</b> sobre decisiones importantes con Conversaciones."
       item4: "<b>Planifica</b>lo que debe hacerse con las Tareas."
@@ -346,7 +355,7 @@ pt:
       feature7: "Crear y editar páginas compartidas."
       footer: Este proyecto te pertenecerá a ti. Puedes transferirlo a tus contactos en cualquier momento.
       limited: "Em uma conta gratuita, apenas pode subir até 50Mb de arquivos anexos por projeto."
-      upgrade: Consigue una cuenta premium ahora!
+      upgrade: Consegue uma conta premium agora!
     new:
       title: Criar um projeto
       submit: Criar projeto e convidar usuários
@@ -398,7 +407,7 @@ pt:
       submit: Enviar
       invite_from_project: "Convidar alguém desde outro projeto"
     recent:
-      invite: "Convidar á {{username}}"
+      invite: Convidar á {{username}}
     errors:
       invalid: Convite inválido
       invalid_code: Código do convite inválido
@@ -456,12 +465,16 @@ pt:
     comments: Entradas
     filter_by: Filtrar por
     report: Relatório
-    week_num: "Semana {{num}}"
+    week_num: Semana {{num}}
     entry_hours: horas
     entry_total: Total
     week_total: Total
     all_tasks: Todas as tarefas
     all_users: Todos os usuários
+    filters:
+      assigned_to: Assinado a
+      tasks: Tarefas
+      projects: Projetos
     reports:
       user: Usuários
       project: Projetos
@@ -559,12 +572,12 @@ pt:
       footer2: "Também pode anexar arquivos a qualquer página do projeto. Divirta-se!"
     buttons:
       new_note: Texto
-      new_divider: Divisor
+      new_divider: Separador
       new_upload: Arquivo
       new_task_list: Lista de Tarefas
     new:
       title: Nova página
-      define1: "Aquí puedes <b>compartir información de uso frecuente</b> con tu equipo: Un roadmap, links útiles, instrucciones, plantillas de emails..."
+      define1: "Aqui pode <b>compartilhar informação de utilização</b> com a equipe."
       define2: "Editar una página es sencillo y divertido, con elementos arrastrables que puedes editar en el sitio."
       feature1: "<b>Comparte</b>. Todos los miembros del proyecto pueden verlas y editarlas."
       feature2: "<b>Publica</b>. Publicación instantánea a la web con las páginas compartidas. Crea una web en segundos."
@@ -572,7 +585,7 @@ pt:
       feature4: "<b>Wiki</b>. Actúan como un wiki, dando toda información de tu proyecto."
       footer1: "Usa Teambox como una <b>pizarra compartida</b> para información de uso frecuente."
       footer2: "También puedes adjuntar archivos a cualquier página del proyecto. Disfruta!"
-      submit: Crear
+      submit: Criar
     edit:
       title: Editar página
       submit: Atualizar
@@ -688,7 +701,7 @@ pt:
       participant: Participante
       admin: Administrador
       remove: Expulsar
-      transfer: Transferir el proyecto
+      transfer: Transferir o projeto
       leave_project: Deixar o projeto
       confirm_delete: Quer eliminar esta pessoa do projeto?
     errors:
@@ -711,16 +724,18 @@ pt:
       confirm_delete: Tem certeza que quer eliminar este comentário?
       hours: "{{hours}}h"
       hours_with_minutes: "{{hours}}h {{minutes}}m"
-      cannot_edit: "O comentário não pode ser editada 15 minutos depóis de ser publicado"
+      cannot_edit: "O comentário não pode ser editado 15 minutos depóis de ser publicado"
     hours:
       add_hours: Horas
       hours: Quantas horas tem trabalhado nesta tarefa?
     new:
       assigned_to_nobody: Sem assinar
       assigned_to: "Atribuído para:"
-      submit: Publicar
+      submit: "Publicar"
+      preview: "Visualizar"
+      close: "Fechar"
       project: "O que está fazendo? Compartilhe idéias, links, mensagens."
-      conversation: "Envie um mensagem ao grupo."
+      conversation: "Envie uma mensagem ao grupo."
       task_list: "Compartilhe idéias para esta lista de tarefas. Para criar e assinar tarefas utilize a barra lateral."
       task: "Defina o que tem que ser feito em um comentário. Defina um responsável. Publique atualizações. Anexa os resultados."
     edit:
@@ -781,6 +796,16 @@ pt:
       submit: Entrar
       login_failed: "Os dados de acesso para {{login}} não são corretos"
 
+  email:
+    user:
+      welcome: "Bem-vindo ao Teambox!"
+    subjects:
+      get_started_with_teambox: "Inicie no mundo do Teambox!"
+      your_password_has_successfully_been_reset: "Sua senha foi corretamente alterada"
+      password_retrieval_for_teambox: "Recuperação de senha para Teambox"
+      project_invitation: "{{username}} compartilho com você o projeto {{project_name}}"
+      group_invitation: "{{username}} compartilho com você o grupo {{group_name}}"
+      
   shared:
     strip:
       archived: "Este projeto está arquivado. Para editar ou comentar precisa desarquivá-lo nas <a href='{{link}}'>preferências do projeto</a>"
@@ -796,6 +821,7 @@ pt:
       welcome: Bem-vindo
       all_projects: Projetos
       new_project: +
+      signed_in: Logado como
     project_settings_navigation:
       general: Dados do projeto
       picture: Imagem do projeto
@@ -838,10 +864,12 @@ pt:
       profile_information: Informação de contato
       profile_picture: Imagem
       notifications: Notificações
+      delete_account: Eliminar conta
     task_navigation:
       all_tasks: Todas
       unarchived_tasks: Tarefas sem arquivar
       my_tasks:
+        title: "Minhas Tarefas"
         one: "Minha"
         other: "Minhas ({{count}})"
       everybodys_tasks: "Todas as tarefas"
@@ -853,10 +881,10 @@ pt:
     watchers:
       unwatch: Deixar de seguir
       watch: Seguir
-      people_watching: "Seguiendo este elemento: "
-      nobody_watching: "Nadie sigue los cambios de este elemento"
-      started_watching: "Ahora recibirás emails con las actualizaciones de este elemento."
-      stopped_watching: "Ya no recibirás más notificaciones de este elemento."
+      people_watching: "Recebe alertas de esta conversa: "
+      nobody_watching: "Ninguém segue as alterações para esta conversa."
+      started_watching: "Agora, você vai receber e-mails com as atualizações desta conversa."
+      stopped_watching: "Você não vai receber mais avisos desta conversa."
     upgrade_browser:
       upgrade: Estás utilizando uma versão velha do Internet Explorer. Pode ser que o Teambox não funcione corretamente.
       ie: Atualize o Internet Explorer
@@ -870,7 +898,7 @@ pt:
       do_not_answer: "Não responda este email."
       answer_above_this_line: "SELECIONE EM CIMA DESTA LINHA PARA RESPONDERNDER"
     invitation:
-      subject: "{{user}} compartilho com você o projeto {{project}}"
+      subject: "{{user}} compartilhou o projeto [{{project}}] com você"    
       collaborate_with: "{{name}} quer colaborar com você no Teambox:"
       you_have_been_invited_to: "Você foi convidado para o projeto <b>{{project}}</b>"
       accept_the_invitation: Aceite este convite para participar e colaborar
@@ -880,10 +908,10 @@ pt:
       plan_share_and_collaborate: "Planifica, compartilha e mantem atualizado o que esta sendo feito. Tão fácil como tem que ser."
       report_abuse: "Este email foi enviado por solicitação deste usuário. Se isso é incorreto favor entre em contato."
     invitation_group:
-      subject: "{{user}} compartilho com você o grupo {{group}}"
+      subject: "{{user}} compartilhou o projeto [{{project}}] com você"    
       you_have_been_invited_to: "Você foi convidado ao grupo <b>{{group}}</b>"
     confirm:
-      subject: "Inicie no mundo do Teambox!"
+      subject: "Inicie no trabalho no Teambox"    
       hey: "Olá, {{user_name}}!"
       follow_the_link: "Para <b>completar seu registro</b> no Teambox tem que seguir o seguinte link:"
       log_in: "Entrar no Teambox agora!"
@@ -891,7 +919,7 @@ pt:
       report_abuse: "Você está recebendo esta mensagem porque esta registrado no Teambox com o seguinte endereço: {{email}}"
       problems: "Se tiver problemas, entre em contato conosco: {{support}}"
     reset_password:
-      subject: "Sua senha foi corretamente alterada"
+      subject: "A senha foi corretamente recuperada"
       hey: "Olá, {{user_name}}!"
       follow_the_link: "Para <b>recuperar sua senha</b> no Teambox apenas clique no link:"
       log_in: "Entrar no Teambox agora!"
@@ -1189,7 +1217,9 @@ pt:
       long: "%B %d, %Y %H:%M"
     am: "am"
     pm: "pm"
-
+   
+  countries: País
+  
   support:
     select:
       prompt: "Escolhe uma opção"

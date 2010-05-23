@@ -38,9 +38,9 @@
       = hidden_field_tag :original_controller, controller_name
       %span.showPreview
         %button{}
-          %span.default= "Preview"
+          %span.default= t('comments.new.preview')
           %span.showing{:style => "display:none"}= "..."
-        %a{:href => '#', :style => 'display:none'}= "Close"
+        %a{:href => '#', :style => 'display:none'}= t('comments.new.close')
       = f.submit t('.submit')
     = loading_image(js_id(:new_loading,Comment.new))
     .clear
