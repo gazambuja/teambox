@@ -12,15 +12,17 @@
   %body{ :class => "#{location_name} #{I18n.locale} #{ENV['RAILS_ENV']}"}
     = javascript_include_tag 'modernizr'
     .container
-      .navigation_wrap
-        .navigation
-          %ul
-            %li= link_to_public_page 'home'
-            %li= link_to_public_page 'tour'
-            %li= link_to_public_page 'users'
-            %li= link_to_public_page 'services'
-            %li= link_to_public_page 'community'
-            %li= link_to_public_page 'help'
+      - if APP_CONFIG['show_top_bar']
+        .navigation_wrap
+          .navigation
+            %ul
+              %li= link_to_public_page 'home'
+              %li= link_to_public_page 'tour'
+              %li= link_to_public_page 'users'
+              %li= link_to_public_page 'services'
+              %li= link_to_public_page 'community'
+              %li= link_to_public_page 'help'
+
       .wrapper
         .content
           - show_flash

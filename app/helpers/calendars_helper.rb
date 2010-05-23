@@ -304,8 +304,8 @@ module CalendarsHelper
    end
    
    def filter_hours_assigned_dropdown(target_id, project=nil)
-     options = [['Anybody',     0],
-               ['My tasks',    current_user.id]]
+     options = [[t('task_lists.filter.anybody'),     0],
+               [t('task_lists.filter.anytime'),    current_user.id]]
      user_list = project ? project.users.sort_by(&:name) : Person.users_from_projects(current_user.projects)
      if !user_list.nil?
        options += [['--------', 'divider']]
@@ -317,7 +317,7 @@ module CalendarsHelper
    end
    
    def filter_people_assigned_dropdown(target_id, project=nil)
-      options = [['All tasks',     0]]
+      options = [[t('shared.task_navigation.all_tasks'),     0]]
       task_list = project ? project.tasks.unarchived :
                             Task.find(:all, :conditions => ['project_id IN (?) AND status < ?', current_user.project_ids, 3])
       options += [['--------', 'divider']]
@@ -326,7 +326,7 @@ module CalendarsHelper
     end
     
     def filter_project_dropdown(target_id)
-        options = [['All projects',     0]]
+        options = [[t('shared.navigation.all_projects'),     0]]
         options += [['--------', 'divider']]
         options += current_user.projects.sort_by(&:name).collect { |p| [p.name, p.id] }
         select(:hours_project_filter, :assigned, options, :disabled => 'divider', :id => target_id)
