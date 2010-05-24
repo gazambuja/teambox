@@ -79,6 +79,9 @@ defaults: &defaults
     :user_name: USER
     :password:  PASSWORD
 
+  # Application Name (Title)
+  app_name: Teambox
+  
   # Show topbar in login page?
   show_top_bar: true
 

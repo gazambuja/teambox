@@ -8,7 +8,7 @@
     %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
     %title
       = @page_title
-      Teambox
+      = APP_CONFIG['app_name']
     = stylesheet_link_tag 'application', :media => :screen
     = stylesheet_link_tag 'print', :media => :print
     = sprockets_include_tag

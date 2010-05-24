@@ -1,7 +1,7 @@
 # Translated by Gustavo Azambuja - http://kuboit.com
 pt:
   # if latest_announcement is less than 5 characters, it will not be displayed
-  latest_announcement: "Novidades: <a href='http://blog.teambox.com/whats-going-on-in-the-kitchen/'>Versão para celular, tradução em francês e alemão e API</a>"
+  latest_announcement: "Novidades: <a href='http://blog.teambox.com/whats-going-on-in-the-kitchen/'>Versão para celular, tradução em português, francês e alemão e API</a>"
   common:
     and: e
     or: ou
@@ -135,8 +135,8 @@ pt:
       login: Nome de usuário
       first_name: Nome
       last_name: Sobrenome
-      biography: Biografía
-      time_zone: Zona horaria
+      biography: Biografia
+      time_zone: Fuso horário
       language: Lingua
       email: Email
       password: Senha
@@ -162,7 +162,7 @@ pt:
         upload_here_or_at_gravatar: "Você pode subir uma foto aqui, ou configurar uma em {{gravatar}}."
         destroy: Eliminar avatar
       account_deletion:
-        steps_before_1: "To delete your Teambox account, first you need to leave or delete all your current projects."
+        steps_before_1: "Para eliminar sua conta, primeiro necessita deixar ou eliminar todos os seus projetos."
         steps_before_2: "This will ensure that no other users will lose data on their projects when you delete your account."
         steps_before_3: "Leave or delete your current projects and then come back to this page to delete your account."
         what_will_happen: "Após eliminar sua conta você não ira conseguir acessar novamente no Teambox."
@@ -220,7 +220,7 @@ pt:
         share_and_collaborate: "Compartilha e colabora com teu equipe! Notificações, conversas, tarefas, páginas e arquivos."
         create_your_first_project: "Um evento, um desenho, um produto..?  <a href='{{link}}'>Cria teu primeiro projeto</a> agora!"
       spread:
-        title: ¡Queremos ser útil!
+        title: ¡Queremos ser úteis!
         reasons: "Temos trabalhado no Teambox durante anos, esperando ajudar com tua organização. <br/>Somos pessõas como você, desenvolvedores motivados com vontade de fazer as coisas melhor."
         help: Podes <b>ajudar-nos</b> falando a teus amigos cómo utilizar Teambox em
         twitter: 'Twitter,'
@@ -245,8 +245,8 @@ pt:
       tasks_for_tomorrow: "Tarefas para amanhã"
       tasks_for_next_two_weeks: "Nas próximas duas semanas"
       tasks_without_a_due_date: "Sem data fixa"
-      you_receive_this_message: "Podes desativar estas notificaçẽs desde {{link}}"
-      settings_page: "tua página de usuário"
+      you_receive_this_message: "Pode desativar estas notificaçẽs desde {{link}}"
+      settings_page: "sua página de usuário"
   groups:
     index:
       title: Grupos
@@ -314,11 +314,11 @@ pt:
       define1: "<b>Colabore</b> com um grupo para seus projetos: criar um website, organizar uma festa, trabalhos para clientes..."
       define2: "Você pode criar <b>quantos projetos quiser</b> e acessá-los online."
       item1: "<b>Crie um projeto</b>, escolha um nome e <b>convide os seus contatos</b> para ele."
-      item2: "<b>Comenta</b> sobre lo que haces en cada momento en el muro del proyecto."
-      item3: "<b>Conversa</b> sobre decisiones importantes con Conversaciones."
-      item4: "<b>Planifica</b>lo que debe hacerse con las Tareas."
-      item5: "<b>Comparte información</b> con Páginas dentro de cada proyecto."
-      footer: "Los proyectos son una forma centralizada de colaborar, para que nunca más tengas que enviar emails a tu equipo."
+      item2: "<b>Deixe um comentário</b> sobre o que fazer em cada momento na parede do projeto."
+      item3: "<b>Conversa</b> sobre as desições importantes em Conversas."
+      item4: "<b>Planifica</b> o que tem que ser feito com as Tarefas."
+      item5: "<b>Compartilha informação</b> com Páginas dentro de cada uns dos projetos."
+      footer: "Os projetos são uma forma centralizada para colaborar, para nunca mais ter que enviar e-mails aos outros participantes."
     show:
       update_your_status: "O que você está fazendo?"
       text_styling: Estilos de texto
@@ -340,20 +340,20 @@ pt:
       name: Nome
       name_description: "Escolha um nome corto e descriptivo. Por exemplo: Taggart Transcontinental"
       permalink: URL
-      permalink_description: "Esto formará la dirección web de tu proyecto. Mantenla breve. No se permiten espacios"
+      permalink_description: "Isto irá formar o endereço web do seu projeto. Mantenha-o breve. Não são permitidos espaços"
       archived: Arquivar este projeto
-      confirm_delete: "Estas seguro de que quieres borrar este proyecto definitivamente? NO HAY VUELTA ATRAS. Si quieres conservarlo, usa Archivar Proyecto."
+      confirm_delete: "Tem certeza que deseja apagar permanentemente este projeto? Não pode voltar atrás. Se você quer manter, usar Arquivar Projeto."
     new_primer:
-      define1: Un proyecto es un grupo compartido con tus contactos.
-      define2: "Dentro de un proyecto, cada miembro puede:"
+      define1: "Um projeto é um grupo compartilhado com seus contatos."
+      define2: "Dentro de um projeto, cada membro pode:"
       feature1: Publicar o que está fazendo.
-      feature2: Empezar conversaciones o contestar.
-      feature3: Adjuntar archivos.
-      feature4: Asignar y planificar.
-      feature5: Comentar en tareas.
-      feature6: Hacer <i>time-tracking</i>.
-      feature7: "Crear y editar páginas compartidas."
-      footer: Este proyecto te pertenecerá a ti. Puedes transferirlo a tus contactos en cualquier momento.
+      feature2: Iniciar conversas ou responder.
+      feature3: Anexar arquivos.
+      feature4: Atribuir e planificar.
+      feature5: Comentar em tarefas.
+      feature6: Fazer <i>time-tracking</i>.
+      feature7: "Criar e editar páginas compartilhadas."
+      footer: "Este projeto pertence a você. Você pode transferir seus contatos a qualquer momento."
       limited: "Em uma conta gratuita, apenas pode subir até 50Mb de arquivos anexos por projeto."
       upgrade: Consegue uma conta premium agora!
     new:
@@ -361,18 +361,18 @@ pt:
       submit: Criar projeto e convidar usuários
       new_project: Novo projeto...
       created: Foi criado o projeto!
-      invalid_project: "Proyecto no válido, corrige los errores e inténtalo de nuevo."
+      invalid_project: "Projeto não valido, corrige os erros e tente novamente."
       create_an_example_project: "Esta é tua primeira vez no Teambox? <a href='{{link}}'>Crie um projeto de exemplo</a> para testar e aprender."
       not_allowed: "Não pode criar projetos com teu tipo de conta."
     edit:
-      title_settings: Preferencias Generales
+      title_settings: Preferências Gerais
       title_picture: Logotipo do Projeto
       title_deletion: Arquivar ou eliminar o projeto
       title_ownership: Dono
       submit: Salvar
       change_owner: Mudar propietário
-      transferred: "Se ha transferido el proyecto al nuevo propietario."
-      invalid_transferred: "No se ha podido transferir el proyecto. Revisa los errores e inténtalo de nuevo."
+      transferred: "O projeto foi transferido para o novo proprietário."
+      invalid_transferred: "Não é possível transferir o projeto. Verifique os erros e tente novamente."
   invitations:
     fields:
       user_or_email: "Insire o email do usuário de teu parceiro:"
@@ -440,17 +440,17 @@ pt:
     primer:
       empty: Ainda não existe nenhuma conversa neste projeto.
       create_first: Cria a primeira conversa para este projeto!
-      define: "<b>Conversa sobre decisiones</b> y <b>pon a tu equipo al día</b> de una forma centralizada.<br/>Cada conversación es una lista de mensajes, que reemplazan a los confusos mensajes."
-      item1: "<b>Comparte archivos</b>. Puedes adjuntar archivos a cada mensaje."
-      item2: "<b>Suscríbete</b> a una conversación para recibir notificaciones de respuestas por email y RSS."
-      item3: "<b>Exprésate</b>. Puedes usar negrita, cursiva y estilos de texto."
-      item4: "<b>Integrado con tu email</b>. Puedes contestar desde tu email para publicar una respuesta."
-      footer1: "Las conversaciones son perfectas para <b>compartir un diseño</b>, <b>decidir una fecha</b> para reunirse o <b>informar</b> sobre las noticias del proyecto."
-      footer2: "Estando ordenadas por hilos, es fácil volver atrás en el tiempo y ver qué archivos se enviaron y qué dijo cada miembro del equipo. En Teambox, <b>colaborar</b> genera una <b>trazabilidad</b> de qué se hizo."
+      define: "<b>Conversa sobre decisões</b> e <b>deixa tua equipe sabendo do que está acontecendo</b> de uma forma centralizada.<br/>Cada conversa é uma lista de mensagens, que substituirá as mensagens confusas do e-mail."
+      item1: "<b>Compartilha arquivos</b>. Pode anexar arquivos a cada mensagem."
+      item2: "<b>Subscrever</b> à uma conversa para receber notificações de respostas por email e RSS."
+      item3: "<b>Se expresse</b>. Pode utilizar estilos de texto, como Puedes usar negrito, itálico, etc."
+      item4: "<b>Integrado com teu correio</b>. Pode responder deste teu email para publicar uma resposta."
+      footer1: "As conversas são perfeitas para <b>compartilhar um desenho</b>, <b>decidir uma data</b> para reunir ou <b>relatar</b> sobre as noticias do projeto."
+      footer2: "São ordenadas através de tópicos, é fácil de voltar no tempo e ver quais arquivos foram enviados e que fez cada membro da equipe. No Teambox, <b>colaborar</b> gerar uma <b>rastreabilidade</b> do que foi feito."
     column:
       new_conversation: Nova conversa
       cant_create: Não tem permissão para criar uma conversa neste projeto.
-      subscribe: Suscríbete al feed
+      subscribe: Assine ao feed
     conversation_with_extract:
       posted_by: Publicado por
     show:
@@ -548,7 +548,7 @@ pt:
       text_styling: Estilos de texto
   dividers:
     actions:
-      delete_confirm: Tem certeza que quer eliminar este divisor?
+      delete_confirm: Tem certeza que quer eliminar este separador?
     new:
       submit: Adicionar
     edit:
@@ -578,13 +578,13 @@ pt:
     new:
       title: Nova página
       define1: "Aqui pode <b>compartilhar informação de utilização</b> com a equipe."
-      define2: "Editar una página es sencillo y divertido, con elementos arrastrables que puedes editar en el sitio."
-      feature1: "<b>Comparte</b>. Todos los miembros del proyecto pueden verlas y editarlas."
-      feature2: "<b>Publica</b>. Publicación instantánea a la web con las páginas compartidas. Crea una web en segundos."
-      feature3: "<b>Imprime</b>. Las páginas están preparadas para ser impresas. Prueba a imprimir una o exportarlas como PDF!"
-      feature4: "<b>Wiki</b>. Actúan como un wiki, dando toda información de tu proyecto."
-      footer1: "Usa Teambox como una <b>pizarra compartida</b> para información de uso frecuente."
-      footer2: "También puedes adjuntar archivos a cualquier página del proyecto. Disfruta!"
+      define2: "Editar uma página é fácil e divertido, com elementos que pode arrastar e soltar, você pode editar no mesmo local."
+      feature1: "<b>Comparte</b>. Todos os seus companheiros de equipe podem visualizar e editar as páginas do projeto."
+      feature2: "<b>Publica</b>. Publicação imediata na web com páginas compartilhadas. Cria em segundos."
+      feature3: "<b>Imprime</b>. As páginas estão prontas para ser impressas. Tenta imprimir ou exportar a PDF!"
+      feature4: "<b>Wiki</b>. Funcionam como uma wiki, permitindo visualizar toda a informação de teu projeto."
+      footer1: "Utiliza Teambox como um <b>quadro branco compartilhado</b> para as coisas mais utilizadas."
+      footer2: "Também pode anexar arquivos a qualquer página do projeto. Divirta-se!"
       submit: Criar
     edit:
       title: Editar página
@@ -748,7 +748,7 @@ pt:
       edit: Editar comentário
   example_projects:
     new:
-      learn: Tutorial de Projeto
+      learn: Tutorial do Projeto
       line1: "Si es tu primera vez en Teambox, puedes crear un proyecto de ejemplo con algunos contenidos."
       line2: "Navegando a través de ellos aprenderás cómo utilizar los proyectos, conversaciones y tareas."
       line3: "No olvides <b>leer las instrucciones</b> y <b>experimentar</b> creando, editando y borrando elementos!"

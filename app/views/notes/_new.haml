@@ -3,6 +3,6 @@
   = note_fields(f)
   .submit{ :id => "note_submit" }
     = f.submit t('.submit')
-    or
-    = link_to_function 'Cancel', inline_hide_note_form
+    = t('common.or')
+    = link_to_function t('common.cancel'), inline_hide_note_form
   =loading('note_form')
