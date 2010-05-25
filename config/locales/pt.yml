@@ -1,4 +1,5 @@
 # Translated by Gustavo Azambuja - http://kuboit.com
+# Mark missing translations by adding ##### at the end of the line
 pt:
   # if latest_announcement is less than 5 characters, it will not be displayed
   latest_announcement: "Acesse no nosso <a href='http://blog.teambox.com'>blog</a> para ter as últimas novidades do Teambox."
@@ -153,14 +154,6 @@ pt:
       notify_tasks: Notifique-me de comentários em tarefas que sigo
       wants_task_reminder: Receber um email diariamente com minhas tarefas
       invalid_login: "utiliza apenas letras, números e _"
-      avatar:
-        field: Novo avatar
-        presence: "Você não pode subir um arquivo vazio"
-        max_size: "O arquivo não pode ser maior de {{mb}}"
-        we_have_this_avatar: "Esta é a imagem que você tem neste momento:"
-        gravatar_in_use: "Não temos nenhuma foto sua, então iremos utilizar {{gravatar}}:"
-        upload_here_or_at_gravatar: "Você pode subir uma foto aqui, ou configurar uma em {{gravatar}}."
-        destroy: Eliminar avatar
       account_deletion:
         steps_before_1: "Para eliminar sua conta, primeiro necessita deixar ou eliminar todos os seus projetos."
         steps_before_2: "This will ensure that no other users will lose data on their projects when you delete your account."
@@ -169,6 +162,14 @@ pt:
         delete_my_account: "Eliminar minha conta agora"
         account_deleted: "Sua conta foi eliminada. Vamos sentir saudades de você!"
         couldnt_delete_account: "Não conseguimos eliminar sua conta. Você ainda tem projetos ativos ou arquivados."
+      avatar:
+        field: Novo avatar
+        presence: "Você não pode subir um arquivo vazio"
+        max_size: "O arquivo não pode ser maior de {{mb}}"
+        we_have_this_avatar: "Esta é a imagem que você tem neste momento:"
+        gravatar_in_use: "Não temos nenhuma foto sua, então iremos utilizar {{gravatar}}:"
+        upload_here_or_at_gravatar: "Você pode subir uma foto aqui, ou configurar uma em {{gravatar}}."
+        destroy: Eliminar avatar
       tooltips:
         login: "Você necessita de um nome de usuário para acessar. As pessõas irão conseguir achar você pelo nome de usuário. Tem que ser em minúsculas, sem espaços. Você pode utlizar traço baixo (_)."
         first_name: Mais de 20 caracteres.
@@ -228,6 +229,36 @@ pt:
         in_your_site: na tua página ou blog!
         tell_us: "Você utiliza o Teambox todos os dias? Nos escreva <a href='mailto:{{address}}'>como você o utiliza</a> em um email!"
       stop_welcome: Ocultar a página de boas vindas
+    feeds:
+      title: Sincronize seus feeds
+      follow_activities: "You can follow Teambox activities from News Readers (Desktop or Mobile)."
+      receive_notifications: "By using a Feed Reader on your computer or mobile device, you will receive notifications from activities in your projects."
+      configure: "You can configure your feed reader to alert you every time something new happens in Teambox, even if you don't have it open in a window."
+      import:
+        title: How to import a news feed
+        body: "Beneath you have a list of feeds you can follow. To import them into your feed reader you need to <strong>right-click the link</strong> and select <strong>copy link address</strong>. Next, go to your feed reader, add a new Feed and paste the address of that feed."
+      your_feeds: Seu feeds de novidades
+      subscribe_to_all: Atividade de todos os projetos
+      subscribe_to_project: Atividade de {{project}}
+      feed_reader:
+        title: Which news reader should I use?
+        body: "Refer to the <a href='{{link}}'>knowledge base</a> for this."
+      more_tips:
+        title: Mais dicas
+        body: "Learn <a href='{{link}}'>more ways to access Teambox</a>."
+    calendars:
+      title: Sincronize seu calendário
+      tasks_can_be_synced: "As tarefas do Teambox podem ser sincronizadas com sua agenda para que você não se esqueça do que está para acontecer."
+      possible_clients: "Você pode sincronizar com Google Calendar, seu Apple's iCal, Outlook, Blackberry e outros."
+      your_calendars: Seus Calendários
+      subscribe_to_all: "Todos os projetos: "
+      subscribe_to_project: "Projeto {{project}}: "
+      how_to:
+        title: "Como sincronizar seu calendário"
+        body: "Basically, you should import the links below into your calendar client. Visit our <a href='{{link}}'>knowledge base</a> to learn how to use them with your calendar app."
+      clients:
+        title: Instruções específicas
+        body: "Refer to the <a href='{{link}}'>knowledge base</a> for instructions on how to configure Google Calendar, Apple's iCal, Outlook, Blackberry and others."
     unconfirmed_email:
       title: Confirme o seu endereço de email
       invitation_sent_to: "Enviamos um convite para <i>{{email}}</i>, verifique o seu endereço de correio."
@@ -250,9 +281,9 @@ pt:
   groups:
     index:
       title: Grupos
+      whats_this: O que é isto?
       groups_in: Grupos nos que participa
       your_group: Seu grupo
-      whats_this: O que é isto?
       no_groups: Você não pertence a nenhum grupo.
       description: "Utiliza os grupos para compartilhar recursos com outros, e agrupar teus projetos em um grupo!"
       submit_project: Adicionar
@@ -301,7 +332,6 @@ pt:
       title: Atividade em todos teus projetos
       projects: Meus projetos
       subscribe: Assine o feed de notícias
-      calendars: Calendário de todos os projetos
       new_project: Novo projeto
       refreshes: Atualizado cada minuto
       rss:
@@ -327,7 +357,6 @@ pt:
       people_in_project: Pessoas envolvidas neste projeto
       subscribe: Assine o feed de notícias
       tip: "Citando alguém da forma @nome_de_usuário eles receberão um e-mail com a sua mensagem"
-      calendar: Calendário deste projeto
       rss:
         title: "{{name}}"
         description: "Atividade recente para {{name}}"
@@ -411,6 +440,8 @@ pt:
     errors:
       invalid: Convite inválido
       invalid_code: Código do convite inválido
+    destroy:
+      discarded: "O convite do usuário {{user}} foi eliminado"
   conversations:
     actions:
       confirm_delete: Tem certeza quer quer eleiminar esta conversa?
@@ -471,15 +502,15 @@ pt:
     week_total: Total
     all_tasks: Todas as tarefas
     all_users: Todos os usuários
-    filters:
-      assigned_to: Assinado a
-      tasks: Tarefas
-      projects: Projetos
     reports:
       user: Usuários
       project: Projetos
       task: Tarefas
-
+    filters:
+      assigned_to: Assinado a
+      tasks: Tarefas
+      projects: Projetos
+      
   tasks:
     errors:
       name:
@@ -627,8 +658,6 @@ pt:
       start_on: Inicia em... <i>opcional</i>
       finish_on: Finaliza em... <i>opcional</i>
     filter:
-      due_date: "Mostrar tarefas com data de vencimento..."
-      assigned_to: "Mostrar tarefas atribuídas a..."
       anybody: "Qualquer um"
       my_tasks: "Minhas tarefas"
       unassigned: "Sem assinar"
@@ -637,6 +666,8 @@ pt:
       no_date_assigned: "Sem data assinada"
       today: "Hoje"
       tomorrow: "Amanhã"
+      due_date: "Mostrar tarefas com data de vencimento..."
+      assigned_to: "Mostrar tarefas atribuídas a..."
     link:
       new: Nova lista de tarefas
       edit: Editar
@@ -644,14 +675,17 @@ pt:
       reorder_done: Feito
       unarchive: Des-arquivar
     index:
+      no_dates_assigned: "Sem data assinada"
+      starts_on: "Inicia em {{date}}"
+      ends_on: "Finaliza em {{date}}"
       add_link: Nova lista de tarefas
       empty: Não existem tarefas nesta categoría
       tasks_for_all_projects: Tarefas para todos os projetos
       tasks_for_project: Lista de tarefas neste projeto
       other_views: Outras vistas
-      no_dates_assigned: "Sem data assinada"
-      starts_on: "Inicia em {{date}}"
-      ends_on: "Finaliza em {{date}}"
+      rss:
+        title: "{{name}} tarefas atualizadas"
+        description: "Tarefas para o projeto {{name}}"
     primer:
       empty: Ainda não tem nenhuma conversa neste projeto.
       create_first: Cria a primeira lista de tarefas!
@@ -676,6 +710,7 @@ pt:
       new_task_list: Nova lista de tarefas
       cant_create: Não tem permissão para criar tarefas neste projeto.
       subscribe: Assinga a lista de tarefas
+      subscribe_to_project: Atividade de {{project}}
       other_views: Outras vistas
     show:
       title: "Lista de tarefas: {{name}}"
@@ -684,10 +719,10 @@ pt:
   people:
     link:
       edit: Editar
-    edit:
-      submit: Modificar
     update:
       success: Modificado corretamente
+    edit:
+      submit: Modificar
     fields:
       role: Rol
       observer: Observador. Acesso somente leitura para o projeto.
@@ -707,16 +742,15 @@ pt:
     errors:
       user_or_email: "Não tem achado o usuário. Ingresse teu e-mail ou nome de usuário."
     column:
+      select_project: "Escolha um projeto"
+      no_contacts: "Não existem usuários disponíveis para convidar"
       inviting: "Convidar outros usuários"
       only_admins_can_invite: "Só um administrador pode convidar pessoas ao projeto."
-      contact_admins:
-        one: "Neste projeto, apenas {{admins}} pode convidar novos usuários."
-        other: "Neste projeto, apenas {{admins}} podem convidar novos usuários."        
+      contact_admins: "Neste projeto, apenas {{admins}} pode convidar novos usuários."
       leaving: "Deixar o projeto"
       you_can_leave: "Pode deixar este projeto em qualquer momento. Se você fizer isto não ira conseguir acessar novamente ou receber notificaçõe de atividade."
       leave_project: "Deixar este projeto"
       confirm_delete: Tem certeza que quer deixar este projeto?
-      select_project: "Escolha um projeto"
   comments:
     comment:
       commented_on: "-"
@@ -731,8 +765,8 @@ pt:
     new:
       assigned_to_nobody: Sem assinar
       assigned_to: "Atribuído para:"
-      submit: "Publicar"
       preview: "Visualizar"
+      submit: "Publicar"
       close: "Fechar"
       project: "O que está fazendo? Compartilhe idéias, links, mensagens."
       conversation: "Envie uma mensagem ao grupo."
@@ -752,7 +786,7 @@ pt:
       line1: "Si es tu primera vez en Teambox, puedes crear un proyecto de ejemplo con algunos contenidos."
       line2: "Navegando a través de ellos aprenderás cómo utilizar los proyectos, conversaciones y tareas."
       line3: "No olvides <b>leer las instrucciones</b> y <b>experimentar</b> creando, editando y borrando elementos!"
-      create: Crear el proyecto tutorial
+      create: Criar o projeto tutorial
       line4: "En este proyecto no podrás invitar a otros usuarios, pero sí puedes hacer todo lo demás."
       error: "No se ha podido crear el proyecto de ejemplo."
       error_list: "No se ha podido crear el proyecto de ejemplo. Estos proyectos no son válidos: {{list}}."
@@ -762,8 +796,8 @@ pt:
       select_a_file: Escolha um arquivo
     index:
       new_file: Enviar um arquivo
-      max_upload_size: "O tamanho máximo de arquivo é de {{mb}} Mb"
       cant_create: Você não tem permissão para enviar arquivos neste projeto.
+      max_upload_size: "O tamanho máximo de arquivo é de {{mb}} Mb"
     form:
       presence: Você não pode enviar um arquivo vazio
       max_size: "O tamanho máximo do arquivo é {{mb}}"
@@ -779,7 +813,6 @@ pt:
       item2: "<b>Versões</b>. Sube novas versões de arquivos e salva o histórico."
       item3: "<b>Siempre sempre disponível</b>. Os arquivos permanecem no contexto do projeto para futura referência."
     upload:
-      uploaded_the_file: "o arquivo foi enviado"
       download: Baixar
       uploaded_by: Enviado por
       remove: Eliminar
@@ -817,6 +850,9 @@ pt:
       projects: Projetos
     archived_projects:
       archived_projects: Projetos arquivados
+    instructions:
+      subscribe_to_feeds: Assine o feed de notícias
+      subscribe_to_calendars: Baixe o calendário
     navigation:
       welcome: Bem-vindo
       all_projects: Projetos
@@ -872,6 +908,7 @@ pt:
         title: "Minhas Tarefas"
         one: "Minha"
         other: "Minhas ({{count}})"
+      my_assigned_tasks: "apenas as tarefas assinadas para mim"
       everybodys_tasks: "Todas as tarefas"
       hide_archived_tasks: "Ocultar tarefas arquivadas"
     footer:
