@@ -4,7 +4,7 @@ module ApplicationHelper
   # overwrite framework helper because it forces ":raise => true", meaning
   # missing translations wouldn't have a chance to hit the exception_handler
   def translate(key, options = {})
-    translation = I18n.translate(scope_key_by_partial(key), options)
+    translation = I18n.translate(scope_keys_by_partial(key), options)
     translation.respond_to?(:join) ? translation.join : translation
   rescue I18n::MissingTranslationData => e
     keys = I18n.send(:normalize_translation_keys, e.locale, e.key, e.options[:scope])
@@ -355,5 +355,14 @@ module ApplicationHelper
   def tooltip(text)
     haml_tag :p, h(text), :class => 'fyi'
   end
-  
+
+  def auto_discovery_link_by_context(user, project)
+    if user
+      if project
+        auto_discovery_link_tag(:rss, user_rss_token(project_path(project, :format => :rss)))
+      else
+        auto_discovery_link_tag(:rss, user_rss_token(projects_path(:format => :rss)))
+      end
+    end
+  end
 end

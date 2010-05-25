@@ -74,29 +74,48 @@ module ProjectsHelper
   def project_primer
     render :partial => 'projects/primer'
   end
-  
-  def subscribe_to_projects_link
+
+  def instructions_for_feeds
     content_tag(:div,
-      link_to(t('.subscribe'), user_rss_token(projects_path(:format => :rss))),
+      link_to(t('shared.instructions.subscribe_to_feeds'), feeds_path),
+      :class => :subscribe)
+  end
+
+  def subscribe_to_all_projects_link
+    content_tag(:div,
+      link_to(t('.subscribe_to_all'), user_rss_token(projects_path(:format => :rss))),
       :class => :subscribe)
   end
 
   def subscribe_to_project_link(project)
     content_tag(:div,
-      link_to(t('.subscribe'), user_rss_token(project_path(@current_project, :format => :rss))),
+      link_to(t('.subscribe_to_project', :project => project),
+        user_rss_token(project_path(project, :format => :rss))),
       :class => :subscribe)
   end
 
-  def subscribe_to_calendars_link
+  def instructions_for_calendars
     content_tag(:div,
-      link_to(t('projects.index.calendars'), user_rss_token(projects_path(:format => :ics))),
+      link_to(t('shared.instructions.subscribe_to_calendars'), calendars_path),
       :class => :calendars)
+  end
+
+  def subscribe_to_all_calendars_link
+    content_tag(:div,
+      t('.subscribe_to_all') +
+      link_to("All tasks", user_rss_token(projects_path(:format => :ics))) +
+      ' ' + t('common.or') + ' ' +
+      link_to("only tasks assigned to me", user_rss_token(projects_path(:format => :ics), 'mine')),
+      :class => :calendar_links)
   end
 
   def subscribe_to_calendar_link(project)
     content_tag(:div,
-      link_to(t('projects.show.calendar'), user_rss_token(project_path(project, :format => :ics))),
-      :class => :calendars)
+      t('.subscribe_to_project', :project => project) +
+      link_to("All tasks", user_rss_token(project_path(project, :format => :ics))) +
+      ' ' + t('common.or') + ' ' +
+      link_to("only tasks assigned to me", user_rss_token(project_path(project, :format => :ics), 'mine')),
+      :class => :calendar_links)
   end
   
   def print_projects_link

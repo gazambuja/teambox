@@ -1,6 +1,7 @@
 # This controller handles the login/logout function of the site.  
 class SessionsController < ApplicationController
 
+  force_ssl :only => :new
   no_login_required :except => :destroy
   
   skip_before_filter :confirmed_user?
@@ -28,7 +29,7 @@ class SessionsController < ApplicationController
       self.current_user = user
       handle_remember_cookie! true
       flash[:error] = nil
-      redirect_back_or_default root_path
+      redirect_back_or_default root_url
     else
       note_failed_signin
       @login       = params[:login]
