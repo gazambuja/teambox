@@ -908,7 +908,6 @@ pt:
         title: "Minhas Tarefas"
         one: "Minha"
         other: "Minhas ({{count}})"
-      my_assigned_tasks: "apenas as tarefas assinadas para mim"
       everybodys_tasks: "Todas as tarefas"
       hide_archived_tasks: "Ocultar tarefas arquivadas"
     footer:
